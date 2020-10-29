@@ -79,12 +79,16 @@ app.post('/users', (req, res) => {
 app.delete("/users/:id", (req, res) => {
     if (users.length == 0)
         readData(); 
-    let body = req.body; 
+    //let body = req.body; 
+    var flag=1;
+    const userid = req.params.id;
     for (let index = 0; index < users.length; index++) {
         let element = users[index];
-        if (element.userId == body.userId) { 
+        if (element.userId == userid) { 
             users.splice(index,1);
             res.send("UserDeleted Successfully");
+            saveData();
+            readData();
             flag = 0;
         }
      }
