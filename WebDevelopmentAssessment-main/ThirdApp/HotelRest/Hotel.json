@@ -1,0 +1,18 @@
+[
+    {
+        "hotelName": "Kalyani",
+        "hotelCity": "Mysore",
+        "hotelType": "Vegeterian"
+    },
+    {
+        "hotelName": "surabhi",
+        "hotelCity": "Banglore",
+        "hotelType": "nonVegeterian"
+    },
+    {
+        "hotelName": "rajbhavan",
+        "hotelCity": "bangalore",
+        "hotelType": "nonVegeterian"
+    
+    }
+]
